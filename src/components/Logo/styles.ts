@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  grid: PR;
+  grid-area: LG;
 
   display: flex;
   flex-direction: column;
@@ -11,7 +11,6 @@ export const Container = styled.div`
   background-color: var(--tertiary);
   padding: 11px 0;
 
-  height: 150px;
 
   img {
     height: 60px;

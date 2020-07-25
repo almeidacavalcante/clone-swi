@@ -2,12 +2,13 @@ import React from 'react';
 
 import { Grid } from './styles';
 import Logo from '../Logo';
-import SideBar from '../SideBar';
+import Profile from '../Profile';
 
 const Layout: React.FC = () => {
   return (
     <Grid>
-      <SideBar />
+      <Logo />
+      <Profile profile={{name: 'Marcia Costa'}} />
     </Grid>
   )
 }

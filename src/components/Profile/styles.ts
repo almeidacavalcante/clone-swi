@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  grid: PR;
+  grid-area: PR;
 
   display: flex;
   flex-direction: row;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   justify-content: center;
 
   & > div > span {
-    color: var(--silver);
+    color: var(--grafith); 
     font-size: 12px;
   }
 `;
@@ -18,14 +18,16 @@ export const Name = styled.div`
   font-weight: bold;
   color: var(--grafith);
   font-size: 13px;
+  margin: 5px 0 0 0;
 `;
 
-const imageSize = 45;
+const imageSize = 40;
+
 export const Circular = styled.div`
   width: ${imageSize}px;
   height: ${imageSize}px;
   border-radius: 50%;
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
 
   display: flex;
   justify-content: center;
