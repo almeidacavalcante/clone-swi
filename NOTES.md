@@ -1,19 +1,27 @@
-# New title created dinamimcally 
+This is a simple test for a dinamic commit 
 
 
-### A simple test
+### Some component
 
 ```typescript
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render } from 'react-dom'
+import { GlobalStyle } from './styles/GlobalStyle'
 
-import Button from './index'
+const mainElement = document.createElement('div')
+mainElement.setAttribute('id', 'root')
+document.body.appendChild(mainElement)
 
-test('button should renders', () => {
-  const { getByText } = render(<Button>ButtonContent</Button>)
+const App = () => {
+  return (
+    <>
+      <h1>Hello</h1>
+      <GlobalStyle />
+    </>
+  )
+}
 
-  expect(getByText('ButtonContent')).toBeTruthy()
-})
+render(<App />, mainElement)
 
 ```
 
@@ -61,5 +69,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-# New title created dinamimcally 
+This is a simple test for a dinamic commit 
 
